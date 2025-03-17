@@ -64,7 +64,8 @@ function getPairNumberFromColor(pair)
 	 }
 	 
 	 function test(){
-			pairNumber = 4;
+			let pairNumber;
+            pairNumber = 4;
             let testPair1 = getColorFromPairNumber(pairNumber);
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
 			console.assert(testPair1.majorColor == "WHITE");
@@ -96,4 +97,5 @@ function getPairNumberFromColor(pair)
             console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
 			console.assert(pairNumber==6);
 }
+
 test();
